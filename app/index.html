@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+<div class="menu" id="menu">
+	<div class="menu__tel"><a href="instagram://user?username=selfie_foto_ring"><img src="img/instagram-logo.svg" width="28px" alt=""></a></div>
+	<div class="menu__logo"><img src="img/logo.png" alt=""></div>
+</div>
+<nav class="nav">
+	<div class="burger">
+		<div class="burger__patty"></div>
+	</div>
+
+	<ul class="nav__list">
+		<li class="nav__item">
+			<a href="#1" class="nav__link c-blue"><i class="fa fa-camera-retro"></i></a>
+		</li>
+		<li class="nav__item">
+			<a href="#2" class="nav__link c-yellow scrolly"><i class="fa fa-bolt"></i></a>
+		</li>
+		<li class="nav__item">
+			<a href="#3" class="nav__link c-red"><i class="fa fa-music"></i></a>
+		</li>
+		<li class="nav__item">
+			<a href="#4" class="nav__link c-green"><i class="fa fa-paper-plane"></i></a>
+		</li>
+		<li class="nav__item">
+			<a href="#5" class="nav__link c-green"><i class="fa fa-paper-money"></i></a>
+		</li>
+		</li>
+		<li class="nav__item">
+			<a href="#6" class="nav__link c-green"><i class="fa fa-paper-dos"></i></a>
+		</li>
+		</li>
+		<li class="nav__item">
+			<a href="#7" class="nav__link c-green"><i class="fa fa-paper-zai"></i></a>
+		</li>
+	</ul>
+</nav>
+
+<div class="form_predlojenie">
+	<div class="wrapper-f">
+		<form class="forms" id="callback">
+			<button title="Close (Esc)" type="button" class="close">×</button>
+			<h4>Спасибо за заявку!</h4>
+			<p>Пока обрабатывается ваш заказ подписывайтесь на наш инстаграм и слидите за новостями!</p>
+			<div class="button-wrap">
+				<a href="instagram://user?username=selfie_foto_ring" class="btn btn_form">Подписаться на наш Instagram</a>
+			</div>
+
+		</form>
+	</div>
+</div>
+
+<div class="form_wrapper">
+	<div class="wrapper-f">
+		<form class="forms" id="callback">
+			<button title="Close (Esc)" type="button" class="close">×</button>
+			<h4>Заявка:</h4>
+			<p>Оставьте заявку и мы свяжемся с вами в течение 15 минут с 9:00 до 23:00.</p>
+
+			<label>
+				<span>Ваше имя:</span>
+				<input type="text" name="name" required placeholder="Пример: Петя">
+			</label>
+
+			<label>
+				<span>Ваш телефон:</span>
+				<input  type="tel" name="phone" required placeholder="x-xxx-xxx-xx-xx" class="phone" >
+			</label>
+			<label>
+				<span>Выбирите способ связи:</span>
+				<select name="select" size="1" required="">
+					<option selected="" value="Звонок">Звонок</option>
+					<option value="WhatsApp ">WhatsApp (sms)</option>
+					<option value="Telegram">Telegram (sms)</option>
+					<option value="Viber">Viber (sms)</option>
+				</select>
+			</label>
+			<label>
+				<span>Выбирите цвет:</span>
+				<select name="color" size="1" required="">
+					<option selected="" value="Снежно-белый">Снежно-белый</option>
+					<option value="Чёрный">Чёрный</option>
+					<option value="Telegram">Нежно-розовый</option>
+					<option value="Viber">Мятно-зелёный</option>
+				</select>
+			</label>
+			<div class="button-wrap">
+				<button class="btn btn_form">Отправить</button>
+			</div>
+
+			<input type="hidden" name="formname" value="">
+
+		</form>
+	</div>
+</div>
+
+<div class="header" id="1">
+	<div class="header__wrapper">
+		<div class="header__title">
+			<h1>Светодиодное кольцо </br>для селфи</br>Selfie Ring Light </h1>
+			<p>Создайте безупречные снимки!</p>
+			<p>Гарантия 1 год!</p>
+		</div>
+		<div class="header__action">
+			<p>Акция! </br>Закажи самую стильную новинку </br>2017 года со скидкой 40% и получи</br> КОЛЬЦО IRING или POWER BANK </br>в ПОДАРОК!</p>
+			<div class="action__money"><span><strike>2490 &#8381;</strike></span> 1490 &#8381;</div>
+			<a href="#" class="btn btn_open">Заказать сейчас</a>
+			<div class="action__text">До конца акции осталось:</div>
+			<ul class="countdown">
+				<li>
+					<span class="days">00</span>
+					<p class="days_ref">дни</p>
+				</li>
+				<li class="seperator">.</li>
+				<li>
+					<span class="hours">00</span>
+					<p class="hours_ref">часы</p>
+				</li>
+				<li class="seperator">:</li>
+				<li>
+					<span class="minutes">00</span>
+					<p class="minutes_ref">минуты</p>
+				</li>
+				<li class="seperator">:</li>
+				<li>
+					<span class="seconds">00</span>
+					<p class="seconds_ref">секунды</p>
+				</li>
+			</ul>
+		</div>
+		<div class="header__image"><img src="img/header-image.jpg" alt="header"></div>
+	</div>
+</div>
+<div class="features" id="2">
+	<div class="features__title">
+		<p class="features__text">эффектно и эффективно</p>
+		<h1>особенности</h1>
+		<p>Новое современное сведодиодное кольцо для селфи Selfie Ring Light позволит Вам делать фотографии и селфи высокого качества в любое время суток: и днем, и ночью!</p>
+	</div>
+	<div class="features__item">
+		<div class="item">
+			<div class="item_img"><img src="img/1.jpg" alt="" width="250" height="250"></div>
+			<h1>Универсальность</h1>
+			<div class="item__text">Для смартфонов, планшетов, ноутбуков</div>
+			<span>...</span>
+			<div class="item__text">Совместимо с Android, iPhone, Windows</div>
+			<span>...</span>
+			<div class="item__text">Не требует установки приложений</div>
+			<span>...</span>
+			<div class="item__text">Работает как от батареек,</br>  так и от аккамулятора на 750 mAh </br> (подзарядка через стандартный USB кабель)  </div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/2.jpg" alt="" width="250" height="250"></div>
+			<h1>Эффективность</h1>
+			<div class="item__text">Равномерное освещение 36 светодиодами</div>
+			<span>...</span>
+			<div class="item__text"> Три режима яркости светодиодов: Light, Medium, Hard</div>
+			<span>...</span>
+			<div class="item__text">Идеальная подсветка при макросъемке</div>
+			<span>...</span>
+			<div class="item__text">«Маст хэв» для профессионалов мейкапа</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/3.jpg" alt="" width="250" height="250"></div>
+			<h1>Простота</h1>
+			<div class="item__text">Простое крепление по принципу клипсы</div>
+			<span>...</span>
+			<div class="item__text">Защитная накладка для корпуса смартфона</div>
+			<span>...</span>
+			<div class="item__text">Переключение режимов одним нажатием</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/4.jpg" alt="" width="250" height="250"></div>
+			<h1>Удобство</h1>
+			<div class="item__text">Диаметр кольца – 85 мм, толщина – 27 мм</div>
+			<span>...</span>
+			<div class="item__text">Корпус из легкого прочного пластика</div>
+			<span>...</span>
+			<div class="item__text">Легко прячется в дамскую сумочку или карман</div>
+			<span>...</span>
+			<div class="item__text">Идеально лежит в женской руке</div>
+		</div>
+	</div>
+</div>
+<div class="features features__use" id="3">
+	<div class="features__title">
+		<p class="features__text">Мастерам мейкапа, любителям селфи, авторам видеоблогов</p>
+		<h1>Как использовать</h1>
+		<p>Просто наденьте селфи-кольцо как клипсу на смартфон или планшет и делайте яркие, первоклассные фото или ведите трансляции в Periscope в любой обстановке. Теперь все лайки — ваши!</p>
+		<div class="features__video">
+			<div class="row">
+				<div class="col-xs-12">
+					<iframe src="https://www.youtube.com/embed/MzjAYgXU2ws" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="features features__range" id="4" >
+	<div class="features__title">
+		<p class="features__text">Выбирайте любимый цвет</p>
+		<h1>Ассортимент</h1>
+		<p>Пожалуйста, обратите внимание, что реальный оттенок может отличаться от представленного изображения в силу особенности цветопередачи экраном.</p>
+		<div class="item">
+			<div class="item_img"><img src="img/5.jpg" alt="" width="250" height="250"></div>
+			<h2>Снежно-белый </h2>
+			<div class="item__text"> (На батарейках) </br>  1490 &#8381;</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/6.jpg" alt="" width="250" height="250"></div>
+			<h2>Чёрный</h2>
+			<div class="item__text"> (На батарейках) </br>  1490 &#8381;</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/7.jpg" alt="" width="250" height="250"></div>
+			<h2>Нежно-розовый </h2>
+			<div class="item__text"> (На батарейках) </br>  1490 &#8381;</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/8.jpg" alt="" width="250" height="250"></div>
+			<h2>Мятно-зелёный</h2>
+			<div class="item__text"> (На батарейках) </br>  1490 &#8381;</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/10.jpg" alt="" width="250" height="250"></div>
+			<h2>Снежно-белый</h2>
+			<div class="item__text"> (Зарядное устройство USB) </br>  1790 &#8381;</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/9.jpg" alt="" width="250" height="250"></div>
+			<h2>Чёрный</h2>
+			<div class="item__text"> (Зарядное устройство USB)</br>  1790   &#8381;</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/11.jpg" alt="" width="250" height="250"></div>
+			<h2>Нежно-розовый</h2>
+			<div class="item__text"> (Зарядное устройство USB)</br>  1790   &#8381;</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/12.jpg" alt="" width="250" height="250"></div>
+			<h2>Мятно-зелёный</h2>
+			<div class="item__text"> (Зарядное устройство USB)</br>  1790   &#8381;</div>
+		</div>
+	</div>
+</div>
+<div class="features features__action" id="5" >
+	<div class="features__title">
+		<p class="features__text">Выгодное предложение</p>
+		<h1>Акция 1 + 1 = 3 !</h1>
+		<p>Оставьте заявку в течение 3 часов </br>и получите 3 любых Селфи-кольца </br>по цене 2 + кольцо iRing</p>
+		<div class="item">
+			<div class="item_img"><img src="img/trio-energy.jpg" alt="" width="250" height="250"></div>
+			<h2>Зарядка от батареек</h2>
+			<div class="item__text"> <span><strike>4470 &#8381;</strike></br></span> 2980 &#8381;</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/trio-usb.jpg" alt="" width="250" height="250"></div>
+			<h2>Зарядка от USB</h2>
+			<div class="item__text"> <span><strike>5370 &#8381;</strike></br></span> 3580 &#8381;</div>
+		</div>
+		<a href="#" class="btn btn_open">Заказать сейчас</a>
+		<div class="action__text">До конца акции осталось:</div>
+		<ul class="countdown">
+			<li>
+				<span class="days">00</span>
+				<p class="days_ref">дни</p>
+			</li>
+			<li class="seperator">.</li>
+			<li>
+				<span class="hours">00</span>
+				<p class="hours_ref">часы</p>
+			</li>
+			<li class="seperator">:</li>
+			<li>
+				<span class="minutes">00</span>
+				<p class="minutes_ref">минуты</p>
+			</li>
+			<li class="seperator">:</li>
+			<li>
+				<span class="seconds">00</span>
+				<p class="seconds_ref">секунды</p>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="features features__shipping" id="6" >
+	<div class="features__title">
+		<p class="features__text">Как получить</p>
+		<h1>Доставка и подарок</h1>
+
+		<div class="item">
+			<div class="item_img"><img src="img/dostavka.svg" alt="" width="120" height="120"></div>
+			<h2>Доставка и самовывоз</h2>
+			<div class="item__text"> <p><strong>г. Белгород: </strong>Доставку осуществляем курьером до двери, стоимость доставки
+				<strong>200</strong> р. Оплата совершается уже после того, как курьер вместе с Вами проверит заказ, качество и наличие товара. Возможен самовывоз товара из Белгорода. В данном случае доставка бесплатная.
+				<br> <strong>Регионы: </strong>Доставка Почтой России.
+				Мы Вам доверяем и не требуем с Вас предоплаты. Мы ценим Ваше время и все заказы отправляем сразу после подтверждения. Вы можете забрать и оплатить товар на почте в любое удобное для Вас время. Стоимость доставки от <strong>350</strong>	руб. Мы отправим ваш заказ уже сегодня. Selfie Ring дойдет до Вас быстро и без единой царапинки. Доставка займет 3-7 дней.
+				Оплата осуществляется в почтовом отделении при получении заказа или при получении от курьера. Оплата заказа по желанию клиента сразу на расчетный счет.</p></div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/message-closed-envelope.svg" alt="" width="100" height="120"></div>
+			<h2>Условия доставки Почтой России</h2>
+			<div class="item__text">В момент отправки, каждому заказу присваивается номер. По номеру можно отследить доставку посылки на сайте Почты России. Мы незамедлительно вышлем номер Вам по sms. Получить заказ можно в почтовом отделении, индекс которого был указан при оформлении заказа. Уведомление о доставке заказа придет по вашему адресу. Если уведомление вам не поступило, то через 10 дней сходите на почту самостоятельно. Скорее всего, ваше Selfie ring light уже ждет Вас на почте. Для получения заказа на почте возьмите с собой паспорт. Срок хранения заказа в почтовом отделении составляет 1 месяц с момента поступления. Просим вас своевременно получить пришедший заказ. </div>
+		</div>
+		<div class="item">
+			<div class="item_img "><img src="img/giftbox.svg" alt="" width="100" height="120"></div>
+			<h2>Подарок</h2>
+
+			<div class="item__text">Каждому нашему клиенту мы дарим<br>  кольцо Iring !</div>
+			<div class="item_img item_img_e"><img src="img/13.jpg" alt="" width="250" height="250"></div>
+
+		</div>
+	</div>
+</div>
+<div class="features features__work" >
+	<div class="features__title">
+		<p class="features__text">наша команда</p>
+		<h1>Как мы работаем</h1>
+
+		<div class="item">
+			<div class="item_img"><img src="img/comanad.svg" alt="" width="80" height="80"></div>
+			<h2>Шаг #1</h2>
+			<div class="item__text"> Оставьте заявку на сайте и ждите звонка</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/podtv.svg" alt="" width="80" height="80"></div>
+			<h2>Шаг #2</h2>
+			<div class="item__text">Подтвердите ваш заказ по телефону</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/dostavka2.svg" alt="" width="80" height="80"></div>
+			<h2>Шаг #3</h2>
+			<div class="item__text">Мы осуществляем доставку удобным для вас способом</div>
+		</div>
+		<div class="item">
+			<div class="item_img"><img src="img/money22.svg" alt="" width="80" height="80"></div>
+			<h2>Шаг #4</h2>
+			<div class="item__text">Вы оплачиваете товар на почте или курьеру наличными</div>
+		</div>
+		<h1 class="padding_w">Почему стоит покупать именно у нас?</h1>
+		<div class="item ">
+			<div class="item_img"><img src="img/qweqwe.svg" alt="" width="80" height="80"></div>
+			<h2>#1</h2>
+			<div class="item__text">Индивидуальный подход. Каждому покупателю мы уделяем необходимое количество внимания, от стадии выбора товара до его использования.</div>
+		</div>
+		<div class="item item__money">
+			<h2>#2</h2>
+			<div class="item__text">Профессиональные консультации наших специалистов.</div>
+		</div>
+		<div class="item item__money">
+			<h2>#3</h2>
+			<div class="item__text">Быстрая доставка по всей России.</div>
+		</div>
+		<div class="item item__money">
+			<h2>#4</h2>
+			<div class="item__text">Гарантия качества товара. Каждый товар проходит проверку перед отправкой.</div>
+		</div>
+		<div class="item item__money">
+			<h2>#5</h2>
+			<div class="item__text">Большой выбор способов оплаты.</div>
+		</div>
+		<div class="item item__money">
+			<h2>#6</h2>
+			<div class="item__text">Скидки для постоянных покупателей</div>
+		</div>
+		<div class="item item__money">
+			<h2>#7</h2>
+			<div class="item__text">Мы дорожим нашими клиентами и предоставляем им только подлинную информацию, ведь доверие не купишь за деньги</div>
+		</div>
+	</div>
+</div>
+<div class="features features__shipping" id="7"  >
+	<div class="features__title">
+		<p class="features__text">Пора попробовать и вам!</p>
+		<h1>Заказ селфи-кольца</h1>
+		<form class="forms" id="callback">
+
+			<h4>Заявка:</h4>
+			<p>Оставьте заявку и мы свяжемся с вами в течение 15 минут с 9:00 до 23:00.</p>
+
+			<label>
+				<span>Ваше имя:</span>
+				<input type="text" name="name" required placeholder="Пример: Петя">
+			</label>
+
+			<label>
+				<span>Ваш телефон:</span>
+				<input  type="tel" name="phone" required placeholder="x-xxx-xxx-xx-xx" class="phone">
+			</label>
+			<label>
+				<span>Выбирите способ связи:</span>
+				<select name="select" size="1" required="">
+					<option selected="" value="Звонок">Звонок</option>
+					<option value="WhatsApp ">WhatsApp (sms)</option>
+					<option value="Telegram">Telegram (sms)</option>
+					<option value="Viber">Viber (sms)</option>
+				</select>
+			</label>
+			<!--<label>-->
+			<!--<span>Выбирите цвет:</span>-->
+			<!--<select name="color" size="1" required="">-->
+			<!--<option selected="" value="Снежно-белый">Снежно-белый</option>-->
+			<!--<option value="Чёрный">Чёрный</option>-->
+			<!--<option value="Telegram">Нежно-розовый</option>-->
+			<!--<option value="Viber">Мятно-зелёный</option>-->
+			<!--</select>-->
+			<!--</label>-->
+			<div class="button-wrap">
+				<button class="btn btn_form">Отправить</button>
+			</div>
+
+			<input type="hidden" name="formname" value="">
+
+		</form>
+	</div>
+</div>
+<div class="features features__footer"  >
+	<div class="features__title">
+		<img src="img/logo.png" alt="logo" width="200px">
+		<div class="footer">
+			<div class="footer_phone"><a href="tel:+79375685403">+7(937)-568-54-03</a></br><a href="tel:+79375685403">+7(937)-568-54-03</a></div>
+		</div>
+	</div>
+</div>
+<div class="top"><img src="img/top.png" alt=""></div>
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+<script src="js/jquery.downCount.js"></script>
+</body>
+</html>

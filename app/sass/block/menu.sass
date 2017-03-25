@@ -1,0 +1,176 @@
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+$nav-bg: #2b3033
+$blue: #5fc7ea
+$red: #e68568
+$yellow: #e6d068
+$green: #68e6ac
+$ease: all .5s
+$content-animation: scale(0.7) rotateX(-230deg)
+.opacity
+  opacity: 0
+.menu
+  background-color: rgb(47, 50, 52)
+  position: fixed
+  top: 0
+  left: 0
+  height: 44px
+  width: 100%
+  z-index: 1000
+  box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75)
+  transition: .3s
+
+  .menu__tel
+    font-size: 13px
+    font-weight: bold
+    line-height: 16px
+    position: absolute
+    color: white
+    right: 12px
+    top: 8px
+    color: #a4a4a4
+  .menu__logo
+    position: absolute
+    left: 60px
+    img
+      width: 95px
+.nav
+  position: fixed
+  z-index: 1000
+  top: -1px
+  left: 0
+  width: 55px
+  backface-visibility: hidden
+
+  &__list
+    display: flex
+    flex-flow: column wrap
+    height:  94vh
+    transform: translate(0, -100%)
+    transition: $ease
+
+    &--active
+      transform: translate(0, 0)
+
+
+
+  &__item
+    flex: 1
+    position: relative
+    .fa
+      background-image: url("../../img/home.svg")
+      background-repeat: no-repeat
+      background-size: cover
+      width: 25px
+      height: 25px
+    .fa-bolt
+      background-image: url("../../img/2.svg")
+    .fa-music
+      background-image: url("../../img/settings.svg")
+    .fa-paper-plane
+      background-image: url("../../img/shopping-cart.svg")
+    .fa-paper-money
+      background-image: url("../../img/piggy-bank.svg")
+    .fa-paper-dos
+      background-image: url("../../img/motorcycle.svg")
+    .fa-paper-zai
+      background-image: url("../../img/document.svg")
+  &__link
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    text-decoration: none
+    font-size: 24px
+    background: $nav-bg
+    transition: $ease
+    border-top: 1px solid #101023
+
+    &:hover
+      background: mix(black, $nav-bg, 10)
+
+
+
+
+
+.burger
+  height: 44px
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 2
+  background: $nav-bg
+  cursor: pointer
+  transition: $ease
+
+  &:hover
+    background: mix(black, $nav-bg, 10)
+
+
+  &__patty
+    position: relative
+    height: 2px
+    width: 25px
+    background: white
+
+    &:before
+      content: ""
+      position: absolute
+      top: -8px
+      left: 0
+      height: 2px
+      width: 100%
+      background: white
+
+
+    &:after
+      content: ""
+      position: absolute
+      top: 8px
+      left: 0
+      height: 2px
+      width: 100%
+      background: white
+
+
+
+  &__patty,
+  &__patty:before,
+  &__patty:after
+    will-change: transform
+    transition: $ease
+
+
+  &--active
+
+    .burger__patty
+      transform: rotate(90deg)
+      width: 30%
+      background: #f5c87f
+      &:before
+        transform: rotate(-45deg) translate(-7px,-1px) scaleX(0.7)
+        background: #f5c87f
+      &:after
+        transform: rotate(45deg) translate(-7px,1px) scaleX(0.7)
+        background: #f5c87f
+
+
+
+
+
+  img
+    width: 65px
+    transition: $ease
+    transform: rotate(0)
+
+    &:hover
+      transform: rotate(180deg) scale(1.1)
+
+

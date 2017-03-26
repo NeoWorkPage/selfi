@@ -2,7 +2,7 @@ ul
   list-style-type: none
   padding: 0
   margin: 0
-$nav-bg: #2b3033
+$nav-bg: rgba(43, 48, 51, 0.9)
 $blue: #5fc7ea
 $red: #e68568
 $yellow: #e6d068
@@ -48,7 +48,7 @@ $content-animation: scale(0.7) rotateX(-230deg)
     display: flex
     flex-flow: column wrap
     height:  94vh
-    transform: translate(0, -100%)
+    transform: translate(-53px, 0)
     transition: $ease
 
     &--active
@@ -59,6 +59,12 @@ $content-animation: scale(0.7) rotateX(-230deg)
   &__item
     flex: 1
     position: relative
+    border-right: 2px solid rgba(43, 48, 51,0)
+    -webkit-transition: 300ms
+    -moz-transition: 300ms
+    -ms-transition: 300ms
+    -o-transition: 300ms
+    transition: 300ms
     .fa
       background-image: url("../../img/home.svg")
       background-repeat: no-repeat
@@ -90,7 +96,8 @@ $content-animation: scale(0.7) rotateX(-230deg)
     font-size: 24px
     background: $nav-bg
     transition: $ease
-    border-top: 1px solid #101023
+  &__item-active
+    border-right: 2px solid rgba(245, 200, 127, 1)
 
     &:hover
       background: mix(black, $nav-bg, 10)
@@ -100,6 +107,7 @@ $content-animation: scale(0.7) rotateX(-230deg)
 
 
 .burger
+  width: 53px
   height: 44px
   position: relative
   display: flex
@@ -109,7 +117,7 @@ $content-animation: scale(0.7) rotateX(-230deg)
   background: $nav-bg
   cursor: pointer
   transition: $ease
-
+  border-right: 2px solid rgba(43, 48, 51,0)
   &:hover
     background: mix(black, $nav-bg, 10)
 

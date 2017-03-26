@@ -1,5 +1,13 @@
 $(function() {
 
+    $(window).on('load', function () {
+        var $preloader = $('#page-preloader'),
+            $spinner   = $preloader.find('.spinner');
+        $spinner.fadeOut();
+        $preloader.delay(350).fadeOut('slow');
+    });
+
+
     $('.countdown').downCount({
         date: '04/20/2017 05:00:00',
         offset: +10
@@ -66,12 +74,25 @@ $(function() {
 			url: "mail.php",
 			data: $(this).serialize()
 		}).done(function() {
-			$('.form_predlojenie').css({"display":"table"});
-			setTimeout(function() {
-				$.magnificPopup.close();
-				$(".forms").trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
+            $('.form_predlojenie').css({"display":"table"});
+            setTimeout(function() {
+                $.magnificPopup.close();
+                $(".forms").trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
+
+
+    $(window).scroll(function() {
+        var windscroll = $(window).scrollTop();
+        $('.slider').each(function(i){
+            if($(this).position().top <= windscroll + 100) {
+                $('.nav__item-active').removeClass('nav__item-active');
+                $('.nav__item').eq(i).addClass('nav__item-active');
+            }
+        });
+    });
+
+
 });
